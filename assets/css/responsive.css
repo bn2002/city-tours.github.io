@@ -1,0 +1,251 @@
+/*  */
+@media screen and (max-width: 1199px) {
+
+    .header {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .header::after {
+        display: none;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        background-color: var(--orange-color);
+        z-index: 999;
+        width: 282px;
+        justify-content: unset;
+        padding: 54px 28px;
+        height: 100vh;
+        overflow-y: scroll;
+        display: flex;
+        transition: all 1s ease;
+    }
+
+    .header__menu .label {
+        display: none;
+    }
+
+    .header__menu-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .header__menu-item > .btn {
+        display: none;
+    }
+
+    .header__menu-item > .menu__item-link {
+        font-size: 2.4rem;
+        text-transform: capitalize;
+
+    }
+
+    .menu__item-link,
+    .sub-menu__link {
+        color: var(--white-color);
+    }
+
+    .header__sub-menu {
+        display: block;
+        position: unset;
+        background-color: unset;
+        box-shadow: none;
+        margin-left: 16px;
+    }
+
+    .sub-menu__item {
+        border-bottom: none;
+        margin-top: 12px;
+    }
+
+    .sub-menu__item:hover {
+        background-color: unset;
+    }
+
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+
+    .menu__mobile-open {
+        display: block;
+        color: #D1D1D1;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    .menu__mobile-close {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+       
+    }
+    
+    .menu__mobile-close i[class*="ti-"] {
+        font-size: 1.6rem;
+        color: var(--white-color);
+        padding: 4px;
+        cursor: pointer;
+        border: 1px solid var(--white-color);
+        border-radius: 50%;
+    }
+
+    .slider {
+        height: unset;
+    }
+
+    .slider__text-layout {
+        right: 4%;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .experience {
+        margin-top: 0;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .experience__info {
+        padding: 60px 0 20px;
+    }
+
+    .experience__album {
+        position: relative;
+    }
+
+    .album__img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .album__price {
+        top: 4%;
+        right: 6%;
+    }
+
+    .service {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .service__item-description {
+        width: 100%;
+    }
+
+    .sale {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .sale__places-list {
+        margin-top: 30px;
+        /* padding: 0 30px; */
+    }
+
+    .content-sub-heading {
+        margin-bottom: 0;
+    }
+
+    .countdown__time {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .sale__place-item {
+        margin-bottom: 30px;
+    }
+
+    .news {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .news__item-img {
+        width: 100%;
+    }
+
+    .news__item-section {
+        padding-left: 30px;
+    }
+
+    .footer {
+        padding-left: 36px;
+        padding-right: 36px;
+        height: 100%;
+    }
+
+    .footer__description {
+        padding-right: 0;
+    }
+
+    .footer__heading {
+        margin-top: 32px;
+    }
+
+    .footer__copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__copyright-left {
+        margin-bottom: 40px;
+    }
+
+    .footer__copyright-left,
+    .footer__copyright-right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .slider__caption {
+        display: none;
+    }
+
+    .slider__feature-buy {
+        display: none;
+    }
+
+    .slider__mobile {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+        justify-content: center;
+    }
+
+    .slider__buy-mobile {
+        /* padding: 24px 60px;
+        font-size: 2rem; */
+    }
+
+    
+}
+
+@media screen and (max-width: 794px)
+{
+    .slider__feature {
+        display: none;
+    }
+
+    .slider__buy-mobile {
+        padding: 12px 24px;
+        margin-left: 0;
+    }
+
+    .control__icon {
+        top: 42%;
+        padding: 0 8px;
+    }
+
+    .video__play-iframe {
+        width: 100%;
+    }
+}

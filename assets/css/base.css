@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;600;700;900&display=swap');
+:root {
+    --white-color: #fff;
+    --grey-color: #9a9a9a;
+    --border-color: #f1f1f1;
+    --danger-color: #f76570;
+    --success-color: #1bbc9b;
+    --orange-color: #f3a46b;
+    --yellow-color: #ffd205;
+    --purple-color: #ba71da;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Tương đương 10rem để tiện chia font-size */
+    font-size: 62.5%; 
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.height-center {
+    align-items: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(117, 116, 112, 0.8);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fadedIn ease .5s;
+}
+
+.modal-container {
+    width: 900px;
+    position: relative;
+    max-width: calc(100% - 32px);
+}
+
+.modal-close {
+    position: absolute;
+    top: -36px;
+    right: 0;
+    color: #fff;
+    padding: 12px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    z-index: 999;
+    opacity: 1;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-open {
+    display: flex;
+    opacity: 1;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    border-radius: 38px;
+    cursor: pointer;
+    border: none;
+    padding: 6px 24px;
+    display: inline-block;
+}
+
+.btn--large {
+    padding: 12px 28px;
+}
+
+.btn--orange {
+    background-color: #f3a46b;
+}
+
+.btn--yellow {
+    background-color: #ffd205;
+}
+
+.btn--success {
+    background-color: #1bbc9b;
+}
+
+.btn--danger {
+    background-color: #ff6868;
+}
+
+.btn--primary {
+    background-color: #14b9d5;
+}
+
+.btn--violet {
+    background-color: #c755da;
+}
+
+
+.label {
+    display: inline-block;
+    padding: 0 4px;
+    color: var(--white-color);
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.label--warning {
+    background-color: var(--danger-color);
+}
+
+.label--success {
+    background-color: var(--success-color);
+}
+
+.content-sub-heading {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    font-size: 1.4rem;
+
+}
+
+.content-heading {
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+.content-heading-hightlight {
+    position: relative;
+    z-index: 3;
+}
+
+.content-heading-hightlight::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #F3A46B;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 8px;
+    z-index: -99;
+
+}
+
+
+@keyframes fadedIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menuMobileFadedIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
